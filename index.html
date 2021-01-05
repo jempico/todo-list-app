@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>WORKS TO BE DONE</h1>
+    </header>
+
+    <!-- INPUT FIELD TO ENTER TASK -->
+    <form>
+        <input type="text" placeholder="Enter The Work" class="todo_input" name="todo_input">
+        <button class="todo_btn" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    <!--  DROPDOWN FILTER -->
+        <div class="select">
+            <select name="todos" class="filter_todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+
+    <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DINAMICALLY USING JAVASCRIPT-->
+
+    <div class="todo_container">
+        <ul class="todo_list">
+            <div class="todo">
+                <li> Play piano </li>
+                <span class="complete_btn">✔️</span>
+                <span class="delete_btn">🗑️</span>
+            </div>
+        </ul>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+
+</body>
+ </html>
