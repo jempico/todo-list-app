@@ -34,11 +34,11 @@ function addTodo(event) {
         complete_btn.classList.add("complete_btn");
         delete_btn.classList.add("delete_btn");
 
+        //Clearing todo input value
+        todo_input.value = "";
+        }
     }
     
-//Clearing todo input value
-todo_input.value = "";
-}
 
 //Marking each work as completed or removing it from the list:
 
@@ -59,14 +59,41 @@ function deleteCheck(e) {
 }
  
 
-function filterWork() {
-    let filter = this.value;
-    switch(filter) {
-        case 'all':
-            something;
-            break;
-        default:
-            something
+function filterWork(e) {
+// Defining a variable that grabs the filter selected.
+    let filter = e.target.value;
+
+// Defining an array that grabs all the works added to the list (node list);
+    let filteredWork = todo_list.childNodes;
+
+for (let i=0; i<filteredWork.length; i++) {
+    if (filteredWork[i].contains("completedItem")) {
+        console.log(filteredWork[i]); 
+    } else {
+        console.log('none'); 
     }
-    
+}
+/*switch(filter){
+    case 'completed':
+        if (element.classList.contains("completedItem")) {
+            element.style.display = "flex";
+        } else {
+            element.style.display = "none";
+        }
+        break;
+    case 'uncompleted':
+        if (element.classList.contains("completedItem")) {
+            element.style.display = "none";
+        } else {
+            element.style.display = "flex";
+        }
+        break;    
+    case 'all':
+            element.style.display = "flex";
+            break;     
+    default:
+        element.style.display = "flex";
+}
+})
+*/
 }
