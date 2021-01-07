@@ -147,12 +147,25 @@ select {
     align-items: center;
 }
 
+
 /* STYLING TASK THAT IS COMPLETED*/
 
-.completedItem {
+.completedItem  {
+    transform: scale(0.96);
+    background: rgb(204, 202, 202);
+
+}
+.completedItem > li {
     text-decoration: line-through;
     opacity: 0.5;
-    transform: scale(0.96);
+}
+
+
+/* STYLING TASK THAT IS DELETED */
+
+.fall {
+    transform: scale(0.4);
+    opacity: 0;
 }
 
 /* STYLING RESPONSIVE SITE */
