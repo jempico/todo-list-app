@@ -4,14 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    --orange: #ff9966;
-    --coral: #ff5e62;
+    --sublime: #FC5C7D;
+    --light: #6A82FB;
 }
 
 /* ADDING BACKGROUND COLOR, FONT FAMILY, FOREGROUND COLOR AND MINIMUM HEIGHT TO OUR PAGE*/
 
 body {
-    background: linear-gradient(120deg, var(--orange), var(--coral));
+    background: linear-gradient(120deg, var(--sublime), var(--light));
     font-family: 'Poppins', sans-serif;
     color: white;
     min-height: 100vh;
@@ -32,13 +32,13 @@ form input, form button {
 }
 
 form button {
-    color: var(--coral);
+    color: var(--light);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover {
-    background: var(--coral);
+    background: var(--light);
     color: white;
 }
 
@@ -60,7 +60,7 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    color: var(--coral);
+    color: var(--light);
     width: 8rem;
     cursor: pointer;
     padding-left: 5px;
@@ -71,7 +71,7 @@ select {
     display: block;
     content: "\25bc";
     position: absolute;
-    color: var(--coral);
+    color: var(--light);
     top: 5px;
     right: 6px;
     pointer-events: none;
